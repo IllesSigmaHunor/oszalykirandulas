@@ -18,7 +18,18 @@ main{
     gap: 20px;
 
 }
+main div:first-child{
+    display: flex;
+}
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+#kis{
+    display: block;
+}
 header{
     height: 400px;
     background-image: url(img/kazincbarcika-szines-varos-kirandulas-jegyvasarlas-csonakazo-to11-csodalatosmagyarorszag.jpg);
@@ -40,7 +51,7 @@ h1{
     background-color: aliceblue;
     
 }
-h2, thead{
+h2{
     border: 3px double ;
     color: var(--maincolor);
     border-radius: 6px;
@@ -84,4 +95,7 @@ footer{
     background-color: gray;
     color: white;
     text-align: center;
+}
+thead{
+    color: blue;
 }
