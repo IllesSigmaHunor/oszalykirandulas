@@ -1,3 +1,68 @@
+:root{
+    --maincolor: rgb(182, 58, 58);
+}
+*{
+    margin: 0px;
+}
+main{
+    margin: auto;
+    margin-bottom: 0px;
+    padding: 15px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+
 header{
     height: 400px;
+    background-image: url(img/kazincbarcika-szines-varos-kirandulas-jegyvasarlas-csonakazo-to11-csodalatosmagyarorszag.jpg);
+    margin-bottom: 10px;
+    padding: 0px;
+}
+h1{
+    background-color: aliceblue;
+    
+}
+h2{
+    border: 3px double ;
+    color: var(--maincolor);
+    border-radius: 6px;
+}
+#head{
+    text-align: center;
+
+}
+header h2{
+    background-color: var(--maincolor);
+    color: white;
+
+}
+table{
+    width: 50%;
+    border-collapse: collapse;
+    background-color: white;
+    
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px;
+}
+#bek{
+    width: 50%;
+}
+
+p{
+    margin: 18px;
+    text-align: justify;
+    text-indent: 6px;
+
+}
+footer{
+    padding: 0px;
+    background-color: gray;
+    color: white;
+    text-align: center;
 }
