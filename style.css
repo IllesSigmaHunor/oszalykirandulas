@@ -1,8 +1,10 @@
 :root{
     --maincolor: rgb(182, 58, 58);
+    
 }
 *{
     margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 main{
     margin: auto;
@@ -13,6 +15,8 @@ main{
     justify-content: center;
     flex-wrap: wrap;
     width: 1200px;
+    gap: 20px;
+
 }
 
 header{
@@ -20,12 +24,23 @@ header{
     background-image: url(img/kazincbarcika-szines-varos-kirandulas-jegyvasarlas-csonakazo-to11-csodalatosmagyarorszag.jpg);
     margin-bottom: 10px;
     padding: 0px;
+    border-bottom: 8px solid;
+        border-image: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+    ) 1;
 }
 h1{
     background-color: aliceblue;
     
 }
-h2{
+h2, thead{
     border: 3px double ;
     color: var(--maincolor);
     border-radius: 6px;
@@ -39,8 +54,12 @@ header h2{
     color: white;
 
 }
+#flexes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
 table{
-    width: 50%;
     border-collapse: collapse;
     background-color: white;
     
@@ -50,14 +69,14 @@ td, th{
     border: 1px solid black;
     padding: 8px;
 }
-#bek{
-    width: 50%;
-}
+
 
 p{
     margin: 18px;
     text-align: justify;
     text-indent: 6px;
+    line-height: 18px;
+    
 
 }
 footer{
