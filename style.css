@@ -6,6 +6,11 @@
     margin: 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+body{
+    background-image: url(img/pngtree-nature-forest-sun-ecology-image_2256183.jpg);
+    background-size: cover;
+
+}
 main{
     margin: auto;
     margin-bottom: 0px;
@@ -16,11 +21,19 @@ main{
     flex-wrap: wrap;
     width: 1200px;
     gap: 20px;
+    
 
 }
-main div:first-child{
-    display: flex;
+@media (max-width: 991px) {
+    img {
+        display: none;
+    }
+    .jscont{
+        display: none;
+    }
+
 }
+
 
 img{
     max-width: 100%;
@@ -86,15 +99,19 @@ p{
     margin: 18px;
     text-align: justify;
     text-indent: 6px;
-    line-height: 18px;
+    line-height: 22px;
+    letter-spacing: 2px;
     
 
 }
 footer{
-    padding: 0px;
+    display: flex;
+    padding: auto;
     background-color: gray;
     color: white;
-    text-align: center;
+    border-top: 3px dotted black;
+    
+    
 }
 thead{
     color: blue;

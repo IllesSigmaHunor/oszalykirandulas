@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UtKazincbarcikara</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="main.js" defer></script>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,70 +19,116 @@
         </div>
     </header>
     <main>
-        <div>
-            <div id="kis">
-                <h2>Indulás a Parlamenttől</h2>
-                <p>Utazásunk Országház épületétől indul, amely Budapest egyik legismertebb nevezetessége. A Duna partján álló Parlament lenyűgöző látványt nyújt minden évszakban, ezért tökéletes kiindulópont egy hosszabb kiránduláshoz. A történelmi környezet különleges hangulatot ad az indulásnak, miközben megkezdjük utunkat Kazincbarcika felé.</p>
-
+        
+            <div class="row">
+                <div class="col-12 col-lg-6 col-sm-12">
+                    <h2>Indulás a Parlamenttől</h2>
+                    <p>Utazásunk Országház épületétől indul, amely Budapest egyik legismertebb nevezetessége. A Duna partján álló Parlament lenyűgöző látványt nyújt minden évszakban, ezért tökéletes kiindulópont egy hosszabb kiránduláshoz. A történelmi környezet különleges hangulatot ad az indulásnak, miközben megkezdjük utunkat Kazincbarcika felé.</p>
+                </div>
+                <img class="col-12 col-lg-6 col-sm-12" src="img/ut.png" alt="ut">
             </div>
-            <img src="img/ut.png" alt="ut">
-        </div>
-        <h2>Az út hangulata</h2>
-        <p>Az utazás során fokozatosan magunk mögött hagyjuk a főváros nyüzsgését. Ahogy haladunk észak felé, egyre több zöld terület, kisebb település és nyugodt táj tárul elénk. Az út nemcsak a cél miatt érdekes, hanem azért is, mert közben Magyarország változatos vidékeit is megismerhetjük.</p>
-        <h2>Érkezés Kazincbarcikára</h2>
+            <div class="container jscont">
+                <div class="row js">
+                    <div class="misi col-6">
+                        <form>
+                            <label for="group">Melyik város érdekel?</label>
+                            <select name="group" id="group">
+                                <option value="Budapest">Budapest</option>
+                                <option value="Újpest">Újpest</option>
+                                <option value="Dunakeszi">Dunakeszi</option>
+                                <option value="Fót">Fót</option>
+                                <option value="Mogyoród">Mogyoród</option>
+                                <option value="Gödöllő">Gödöllő</option>
+                                <option value="Kerepes">Kerepes</option>
+                                <option value="Isaszeg">Isaszeg</option>
+                                <option value="Aszód">Aszód</option>
+                                <option value="Hatvan">Hatvan</option>
+                                <option value="Lőrinci">Lőrinci</option>
+                                <option value="Petőfibánya">Petőfibánya</option>
+                                <option value="Apc">Apc</option>
+                                <option value="Bátonyterenye">Bátonyterenye</option>
+                                <option value="Pásztó">Pásztó</option>
+                                <option value="Mátraverebély">Mátraverebély</option>
+                                <option value="Kazár">Kazár</option>
+                                <option value="Salgótarján">Salgótarján</option>
+                                <option value="Cered">Cered</option>
+                                <option value="Ózd">Ózd</option>
+                                <option value="Sajókaza">Sajókaza</option>
+                                <option value="Vadna">Vadna</option>
+                                <option value="Sajóivánka">Sajóivánka</option>
+                            </select>
+                            <button type="submit">Küldés</button>
+                        </form>
+                    </div>
+                    <div id="fradi">
+                    </div>
+            </div>
+            </div>
+        <div class="container">
 
-        <p>Kazincbarcika egy modern és egyedi hangulatú város, amelyet sokan a „Color City” néven ismernek. A város különlegességét a színes tűzfalfestmények és az utcai művészet adják. A kreatív alkotások szinte minden utcában megjelennek, így a város egy szabadtéri galériára emlékeztet.</p>
-
-        <h2>A Color City Szobor</h2>
-
-        <p>Az út végállomása a híres Color City Szobor, amely a város egyik legismertebb jelképe. A szobor modern megjelenése és színes környezete jól tükrözi Kazincbarcika kreatív arculatát. Ez a hely népszerű találkozópont és kedvelt fotózási helyszín a turisták számára.</p>
-        <div id="flexes">
-            <div>
-                <table cellpadding="8" cellspacing="0">
-                    <thead>    
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <h2>Az út hangulata</h2>
+                    <p>Az utazás során fokozatosan magunk mögött hagyjuk a főváros nyüzsgését. Ahogy haladunk észak felé, egyre több zöld terület, kisebb település és nyugodt táj tárul elénk. Az út nemcsak a cél miatt érdekes, hanem azért is, mert közben Magyarország változatos vidékeit is megismerhetjük.</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <h2>Érkezés Kazincbarcikára</h2>
+                    <p>Kazincbarcika egy modern és egyedi hangulatú város, amelyet sokan a „Color City” néven ismernek. A város különlegességét a színes tűzfalfestmények és az utcai művészet adják. A kreatív alkotások szinte minden utcában megjelennek, így a város egy szabadtéri galériára emlékeztet.</p>
+                    
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <h2>A Color City Szobor</h2>
+                    <p>Az út végállomása a híres Color City Szobor, amely a város egyik legismertebb jelképe. A szobor modern megjelenése és színes környezete jól tükrözi Kazincbarcika kreatív arculatát. Ez a hely népszerű találkozópont és kedvelt fotózási helyszín a turisták számára.</p>
+                </div>
+            </div>
+            <div id="flexes">
+                <div>
+                    <table cellpadding="8" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Adatok az utazásról</th>
+                            </tr>
+                        </thead>
                         <tr>
-                            <th colspan="2">Adatok az utazásról</th>
+                            <th>Adat</th>
+                            <th>Leírás</th>
                         </tr>
-                    </thead>
-                    <tr>
-                        <th>Adat</th>
-                        <th>Leírás</th>
-                    </tr>
-                    <tr>
-                        <td>Indulási hely</td>
-                        <td>Országház, Budapest</td>
-                    </tr>
-                    <tr>
-                        <td>Érkezési hely</td>
-                        <td>Color City Szobor, Kazincbarcika</td>
-                    </tr>
-                    <tr>
-                        <td>Közlekedés</td>
-                        <td>Séta</td>
-                    </tr>
-                    <tr>
-                        <td>Távolság</td>
-                        <td>Körülbelül 190 km</td>
-                    </tr>
-                    <tr>
-                        <td>Becsült sétálási idő</td>
-                        <td>Körülbelül 38–40 óra folyamatos séta</td>
-                    </tr>
-                    <tr>
-                        <td>Érintett települések száma</td>
-                        <td>Körülbelül 35–45 település</td>
-                    </tr>
-                    <tr>
-                        <td>Végállomás városa</td>
-                        <td>Kazincbarcika</td>
-                    </tr>
-                </table>
-            </div>
-            <div id="bek">
-                <h2>Egy különleges élmény</h2>
-                <p>Ez az utazás egyszerre mutatja meg Magyarország történelmi és modern oldalát. A Parlament eleganciájától a Color City művészeti világáig vezető út tele van érdekes látnivalókkal és élményekkel. Kazincbarcika bebizonyítja, hogy egy város a művészet és a közösség erejével teljesen új arculatot kaphat.</p>
-            </div>
+                        <tr>
+                            <td>Indulási hely</td>
+                            <td>Országház, Budapest</td>
+                        </tr>
+                        <tr>
+                            <td>Érkezési hely</td>
+                            <td>Color City Szobor, Kazincbarcika</td>
+                        </tr>
+                        <tr>
+                            <td>Közlekedés</td>
+                            <td>Séta</td>
+                        </tr>
+                        <tr>
+                            <td>Távolság</td>
+                            <td>Körülbelül 190 km</td>
+                        </tr>
+                        <tr>
+                            <td>Becsült sétálási idő</td>
+                            <td>Körülbelül 38–40 óra folyamatos séta</td>
+                        </tr>
+                        <tr>
+                            <td>Érintett települések száma</td>
+                            <td>Körülbelül 35–45 település</td>
+                        </tr>
+                        <tr>
+                            <td>Végállomás városa</td>
+                            <td>Kazincbarcika</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="bek">
+                    <h2>Egy különleges élmény</h2>
+                    <p>Ez az utazás egyszerre mutatja meg Magyarország történelmi és modern oldalát. A Parlament eleganciájától a Color City művészeti világáig vezető út tele van érdekes látnivalókkal és élményekkel. Kazincbarcika bebizonyítja, hogy egy város a művészet és a közösség erejével teljesen új arculatot kaphat.</p>
+                </div>
             
+            </div>
         </div>
     </main>
     <footer>
