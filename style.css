@@ -1,5 +1,8 @@
 :root{
     --maincolor: rgb(182, 58, 58);
+    --primary-h: 210;
+    --primary-s: 80%;
+    --primary-l: 50%;
     
 }
 *{
@@ -16,10 +19,13 @@ main{
     margin-bottom: 0px;
     padding: 15px;
     background-color: lightblue;
-    display: flex;
+
     justify-content: center;
-    flex-wrap: wrap;
-    width: 1200px;
+
+
+    width: 100%;
+    max-width: 1200px;
+
     gap: 20px;
     
 
@@ -59,6 +65,13 @@ header{
         indigo,
         violet
     ) 1;
+}
+button:hover {
+    background-color: hsl(
+        var(--primary-h),
+        var(--primary-s),
+        calc(var(--primary-l) + 10%)
+    );
 }
 h1{
     background-color: aliceblue;
@@ -112,6 +125,14 @@ footer{
     border-top: 3px dotted black;
     
     
+}
+footer a{
+    margin-left: auto;
+    margin-top: 30px;
+    margin-right: auto;
+    text-align: right;
+    color: black;
+    text-decoration: none;
 }
 thead{
     color: blue;
