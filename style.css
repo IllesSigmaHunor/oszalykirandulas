@@ -28,6 +28,9 @@ main{
     img {
         display: none;
     }
+    .jscont{
+        display: none;
+    }
 
 }
 

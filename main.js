@@ -11,7 +11,7 @@ form.addEventListener("submit", function (e) {
     const selectedValue = select.value;
     const buton = document.createElement("button");
     buton.textContent = selectedValue;
-    rix.append(buton);
+    row.append(buton);
     buton.onclick = function(){
         window.open(
             `https://hu.wikipedia.org/wiki/${selectedValue}`,
